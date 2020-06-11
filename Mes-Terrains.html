@@ -319,7 +319,7 @@
 
 							<div class="contact-form-container">
 
-								<h5>Send Us a Message</h5>
+								<h5>Ajouter un terrain</h5>
 								<form id="contact-form" action="http://new.uouapps.com/casa/contact-form.php" method="post" class="default-form">
 
 									<!-- FORM VALIDATION ERROR MESSAGE : begin -->
@@ -332,13 +332,14 @@
 
 									<div class="row">
 										<div class="col-sm-6">
-											<p><input type="text" id="field_name" name="field_name" class="required" placeholder="Name"></p>
+											<p><input type="text" id="field_name" name="field_name" class="required" placeholder="Name du Terrains"></p>
 										</div>
 										<div class="col-sm-6">
-											<p><input type="text" id="field_email" name="field_email" class="required email" placeholder="Email"></p>
-											<p class="contact-hp-email">
-												<input type="text" id="field_email_hp" name="field_email_hp">
-											</p>
+											<p><input type="text" id="localisation" name="field_email" class="required" placeholder="localisation"></p>
+											
+										</div>
+										<div class="col-sm-6">
+											<p><input type="text" id="Nbr_pr" name="field_name" class="required" placeholder="Nombre de personne"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -346,19 +347,13 @@
 											<p><input type="text" id="field_phone" name="field_phone" class="required" placeholder="Phone"></p>
 										</div>
 										<div class="col-sm-6">
-											<p>
-												<span class="select-box">
-													<select id="field_subject" name="field_subject" class="required" data-placeholder="Subject">
-														<option>Subject</option>
-														<option value="lorem-ipsum">Lorem Ipsum</option>
-														<option value="dolor-sit">Dolor Sit</option>
-													</select>
-												</span>
-											</p>
+											
+												<p><input type="text" id="prix" name="field_name" class="required" placeholder="prix du Terrains"></p>
+											
 										</div>
 									</div>
 									<div class="toggle-container property-additional">
-										<h5 class="toggle-title">Additional Information</h5>
+										<h5 class="toggle-title">Plus de Details</h5>
 										<div class="toggle-content">
 									<ul class="custom-list check-list">
 										<input type="checkbox" id="Parking" name="info" value="Parking">
@@ -379,7 +374,7 @@
 											<p class="form-note">All fields are required</p>
 										</div>
 										<div class="col-sm-6">
-											<p class="form-submit"><button class="button submit-btn" data-loading-label="Sending..."><i class="fa fa-envelope"></i> Send Message</button></p>
+											<p class="form-submit"><button class="button submit-btn" data-loading-label="Sending..."><i class="fa fa-envelope"></i>Confirmer</button></p>
 										</div>
 									</div>
 
