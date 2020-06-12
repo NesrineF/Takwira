@@ -2718,150 +2718,150 @@ $(document).ready(function(){
 
 
 
-	if ( $( 'body' ).hasClass( 'enable-style-switcher' ) ) {
+// 	if ( $( 'body' ).hasClass( 'enable-style-switcher' ) ) {
 
 
 
-		// CREATE STYLE SWITCHER
+// 		// CREATE STYLE SWITCHER
 
-		var style_switcher_html = '<div id="style-switcher"><button class="style-switcher-toggle"><i class="ico fa fa-cog"></i></button>';
+// 		var style_switcher_html = '<div id="style-switcher"><button class="style-switcher-toggle"><i class="ico fa fa-cog"></i></button>';
 
-		style_switcher_html += '<div class="style-switcher-content"><ul class="custom-list skin-list">';
+// 		style_switcher_html += '<div class="style-switcher-content"><ul class="custom-list skin-list">';
 
-		style_switcher_html += '<li><button class="skin-default active" data-skin="default"><span>Default</span></button></li>';
+// 		style_switcher_html += '<li><button class="skin-default active" data-skin="default"><span>Default</span></button></li>';
 
-		style_switcher_html += '<li><button class="skin-blue" data-skin="blue"><span>Blue</span></button></li>';
+// 		style_switcher_html += '<li><button class="skin-blue" data-skin="blue"><span>Blue</span></button></li>';
 
-		style_switcher_html += '<li><button class="skin-yellow" data-skin="yellow"><span>Yellow</span></button></li>';
+// 		style_switcher_html += '<li><button class="skin-yellow" data-skin="yellow"><span>Yellow</span></button></li>';
 
-		style_switcher_html += '</ul></div></div>';
+// 		style_switcher_html += '</ul></div></div>';
 
-		$( 'body' ).append( style_switcher_html );
+// 		$( 'body' ).append( style_switcher_html );
 
 
 
-		// INIT SWITCHER
+// 		// INIT SWITCHER
 
-		$( '#style-switcher' ).each(function(){
+// 		$( '#style-switcher' ).each(function(){
 
 
 
-			var switcher = $(this),
+// 			var switcher = $(this),
 
-			toggle = switcher.find( '.style-switcher-toggle' ),
+// 			toggle = switcher.find( '.style-switcher-toggle' ),
 
-			skins = switcher.find( '.skin-list button' ),
+// 			skins = switcher.find( '.skin-list button' ),
 
-			style_switcher_settings = {};
+// 			style_switcher_settings = {};
 
-			if ($('body').hasClass('style-switcher-active')) {
-				switcher.addClass('active');
-			}
+// 			if ($('body').hasClass('style-switcher-active')) {
+// 				switcher.addClass('active');
+// 			}
 
 
 
-			//localStorage.clear();
+// 			//localStorage.clear();
 
 
 
-			// SAVE SETTINGS
+// 			// SAVE SETTINGS
 
-			var style_switcher_save = function(){
+// 			var style_switcher_save = function(){
 
-				if ( $( 'html' ).hasClass( 'localstorage' ) ) {
+// 				if ( $( 'html' ).hasClass( 'localstorage' ) ) {
 
-					localStorage.style_switcher_settings = JSON.stringify( style_switcher_settings );
+// 					localStorage.style_switcher_settings = JSON.stringify( style_switcher_settings );
 
-				}
+// 				}
 
-			};
+// 			};
 
 
 
-			// LOAD SETTINGS
+// 			// LOAD SETTINGS
 
-			if ( $( 'html' ).hasClass( 'localstorage' ) && localStorage.style_switcher_settings ) {
+// 			if ( $( 'html' ).hasClass( 'localstorage' ) && localStorage.style_switcher_settings ) {
 
 
 
-				style_switcher_settings = JSON.parse( localStorage.style_switcher_settings );
+// 				style_switcher_settings = JSON.parse( localStorage.style_switcher_settings );
 
 
 
-				// LOAD SAVED SKIN
+// 				// LOAD SAVED SKIN
 
-				if ( typeof style_switcher_settings.skin !== 'undefined' ) {
+// 				if ( typeof style_switcher_settings.skin !== 'undefined' ) {
 
-					skins.filter( '.active' ).removeClass( 'active' );
+// 					skins.filter( '.active' ).removeClass( 'active' );
 
-					skins.filter( '[data-skin="' + style_switcher_settings.skin + '"]' ).addClass( 'active' );
+// 					skins.filter( '[data-skin="' + style_switcher_settings.skin + '"]' ).addClass( 'active' );
 
-					if ( $( 'head #skin-temp' ).length < 1 ) {
+// 					if ( $( 'head #skin-temp' ).length < 1 ) {
 
-						$( 'head' ).append( '<link id="skin-temp" rel="stylesheet" type="text/css" href="library/css/skins/' + style_switcher_settings.skin + '.css">' );
+// 						$( 'head' ).append( '<link id="skin-temp" rel="stylesheet" type="text/css" href="library/css/skins/' + style_switcher_settings.skin + '.css">' );
 
-					}
+// 					}
 
-				}
+// 				}
 
 
 
-			}
+// 			}
 
 
 
-			// TOGGLE SWITCHER
+// 			// TOGGLE SWITCHER
 
-			toggle.click(function(){
+// 			toggle.click(function(){
 
-				switcher.toggleClass( 'active' );
+// 				switcher.toggleClass( 'active' );
 
-			});
+// 			});
 
 
 
-			// SET SKIN
+// 			// SET SKIN
 
-			skins.click(function(){
+// 			skins.click(function(){
 
-				skins.filter( '.active' ).removeClass( 'active' );
+// 				skins.filter( '.active' ).removeClass( 'active' );
 
-				$(this).toggleClass( 'active' );
+// 				$(this).toggleClass( 'active' );
 
-				style_switcher_settings.skin = $(this).data( 'skin' );
+// 				style_switcher_settings.skin = $(this).data( 'skin' );
 
-				style_switcher_save();
+// 				style_switcher_save();
 
-				if ( $( 'head #skin-temp' ).length < 1 ) {
+// 				if ( $( 'head #skin-temp' ).length < 1 ) {
 
-					$( 'head' ).append( '<link id="skin-temp" rel="stylesheet" type="text/css" href="library/css/skins/' + $(this).data( 'skin' ) + '.css">' );
+// 					$( 'head' ).append( '<link id="skin-temp" rel="stylesheet" type="text/css" href="library/css/skins/' + $(this).data( 'skin' ) + '.css">' );
 
-				}
+// 				}
 
-				else {
+// 				else {
 
-					$( '#skin-temp' ).attr( 'href', 'library/css/skins/' + $(this).data( 'skin' ) + '.css' );
+// 					$( '#skin-temp' ).attr( 'href', 'library/css/skins/' + $(this).data( 'skin' ) + '.css' );
 
-				}
+// 				}
 
 
 
-			});
+// 			});
 
 
 
-		});
+// 		});
 
 
 
-	}
+// 	}
 
-	// STYLE SWITCHER END
+// 	// STYLE SWITCHER END
 
 
 
-/* END. */
+// /* END. */
 
-});
+// });
 
-})(jQuery);
+// })(jQuery);
