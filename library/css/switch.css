@@ -40,6 +40,10 @@
     -webkit-transition: left 0.25s ease;
     transition: left 0.25s ease;
   }
+  .bleuu{
+    background-color: #B4Bdf9;
+
+  }
   .switch-input:checked + .switch-label::before {
     background-color: #020E6A;
   }
