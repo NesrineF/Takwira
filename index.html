@@ -58,6 +58,7 @@
         <![endif]-->
 
 		<script src="library/js/modernizr.custom.min.js" type="text/javascript"></script>
+		<script src="library/js/country-state-select.js"></script>
 
 
 
@@ -505,21 +506,39 @@
 									<!-- SEARCH INPUT : begin -->
 
 									<span class="select-box" title="ville">
-
-										<select name="ville" data-placeholder="Choisissez votre ville" >
 										
-
-											<option value="1">Tunis</option>
-
-											<option value="2">Bizerte</option>
-
-											<option value="3">Sousse</option>
-
-											<option value="4">Nabeul</option>
-
-											<option value="5">Jendouba</option>
-											</select>
-
+									
+										<select id="country" onchange="populateCountries('country','state');" name="country"></select>
+										
+										<script language="javascript">
+											populateCountries("country", "state");
+											console.log(document.getElementById("state"));
+											
+										</script>
+									</span>
+									
+									<span class="select-box" title="ville">
+										
+										
+										
+										<select name="state" id="state" ></select>
+										<br/>
+										<script language="javascript">
+											populateCountries("country", "state");
+											console.log(document.getElementById("state"));
+											
+										</script>
+									</span>
+									<span class="select-box" title="ville">
+										
+									
+										
+										<select id="country2" name="country2"></select>
+										<br />										
+										<script language="javascript">
+            populateCountries("country2");
+											
+										</script>
 									</span>
 
 									<!-- SEARCH INPUT : end -->
