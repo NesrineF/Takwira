@@ -116,7 +116,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.default-form .select-box .select-clone > li { padding: 5px 15px; text-align: left; cursor: pointer; }
 	.default-form .select-box .select-clone > li:last-child { border-radius: 0 0 7px 7px; }
 	.default-form .select-box select { display: none; }
-
+	
 	/* CALENDAR */
 	.default-form .calendar-input { display: inline-block; position: relative; width: 100%; }
 	.default-form .calendar-input .fa { position: absolute; top: 11px; right: 14px; font-size: 18px; }

@@ -12,7 +12,7 @@
     text-indent: -150%;
     clip: rect(0 0 0 0);
     color: transparent;
-    user-select: none;
+   user-select: none;
   }
   .switch-label::before,
   .switch-label::after {
