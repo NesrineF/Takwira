@@ -1,7 +1,7 @@
 function setterrains(){
     var t = JSON.parse(localStorage.getItem("addt")) || [];
     var obj = new Object();
-    if (document.getElementById("namet").value !="" && document.getElementById("localisation").value!="" && document.getElementById("Nbr_pr").value!="" && document.getElementById("numt").length == 8 && document.getElementById("prixt").value!=""){
+    if ((document.getElementById("namet").value !="") && (document.getElementById("localisation").value!="") && (document.getElementById("Nbr_pr").value!="") && (document.getElementById("numt").value.length == 8) && (document.getElementById("prixt").value!="")){
         obj.id=Math.floor(Math.random()*1000);
         obj.nomt=document.getElementById("namet").value;
         obj.loct=document.getElementById("localisation").value ;
@@ -31,7 +31,11 @@ function setterrains(){
         console.log(document.getElementById("namet").value);
         console.log(document.getElementById("localisation").value);
         console.log(document.getElementById("Nbr_pr").value);
-        console.log(document.getElementById("numt").value);
+        console.log(document.getElementById("numt").value.length);
         console.log(document.getElementById("prixt").value);
+        //console.log(    (document.getElementById("namet").value !="") +' '+ (document.getElementById("localisation").value!="") +' '+ (document.getElementById("Nbr_pr").value!="") +' '+ (document.getElementById("numt").length == 8) +' '+
+         //(document.getElementById("prixt").value!=""))
+            ;
+        
     }
 }
