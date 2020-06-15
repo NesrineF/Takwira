@@ -4,20 +4,24 @@ function verifyuser(){
     x=document.getElementById("emailLog").value;
     y=document.getElementById("pwdLog").value;
     var z=t.find( users => users.email == x && users.pwd == y);
-   
+
     
      
     if (z.switch == false){
         localStorage.setItem("con", JSON.stringify(z));
-        alert("you're loged in")
+        
         console.log("client");
+        window.location.href="home-3.html";
+
+
         
 
     }
     else if(z.switch == true)
     {localStorage.setItem("con", JSON.stringify(z));
-    alert("you're loged in")
-    console.log("propPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP");}
+  
+    window.location.href="home-2.html";
+}
     else { alert("verify")
         window.location.href="register.html";}
 }
