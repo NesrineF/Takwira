@@ -59,7 +59,8 @@
 
 		<script src="library/js/modernizr.custom.min.js" type="text/javascript"></script>
 		<script src="library/js/country-state-select.js"></script>
-        <script src="library/js/Register.js"></script>
+		<script src="library/js/Register.js"></script>
+		<script src="library/js/login.js"></script>
 
 
 	</head>
@@ -354,25 +355,25 @@
 
 								<div class="header-form">
 
-									<form action="http://new.uouapps.com/casa/index.html" class="default-form">
+									<form action="" class="default-form">
 
 										<p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> All fields are required! <i class="fa fa-times close"></i></p>
 
 										<p class="form-row">
 
-											<input class="required email" type="text" placeholder="Email">
+											<input class="required email" type="text" placeholder="Email" id="emailLog">
 
 										</p>
 
 										<p class="form-row">
 
-											<input class="required" type="password" placeholder="Password">
+											<input class="required" type="password" placeholder="Password" id="pwdLog">
 
 										</p>
 
 										<p class="form-row">
 
-											<button class="submit-btn button"><i class="fa fa-power-off"></i> Login</button>
+											<button class="submit-btn button" onclick="verifyuser()"><i class="fa fa-power-off" ></i> Login</button>
 
 										</p>
 
