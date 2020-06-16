@@ -26,13 +26,6 @@ function setterrains(){
     }
     else{
         alert("veuillez remplir tous les champs");
-        console.log('error');
-        
-        console.log(document.getElementById("namet").value);
-        console.log(document.getElementById("localisation").value);
-        console.log(document.getElementById("Nbr_pr").value);
-        console.log(document.getElementById("numt").value.length);
-        console.log(document.getElementById("prixt").value);
         //console.log(    (document.getElementById("namet").value !="") +' '+ (document.getElementById("localisation").value!="") +' '+ (document.getElementById("Nbr_pr").value!="") +' '+ (document.getElementById("numt").length == 8) +' '+
          //(document.getElementById("prixt").value!=""))
             ;
