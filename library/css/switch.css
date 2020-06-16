@@ -42,6 +42,10 @@
   }
   .bleuu{
     background-color: #B4Bdf9;
+    height: 40px;
+    width: 90px!important;
+    border: 0px;
+    border-radius: 7px;
 
   }
   .switch-input:checked + .switch-label::before {
