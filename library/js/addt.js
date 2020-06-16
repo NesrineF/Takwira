@@ -8,18 +8,12 @@ function setterrains(){
         obj.nbrp=document.getElementById("Nbr_pr").value ;
         obj.numt=document.getElementById("numt").value;
         obj.prixt=document.getElementById("prixt").value;
+        obj.villes=document.getElementById("villes").value;
         obj.park=document.getElementById("Parking").checked;
         obj.swim=document.getElementById("Swiming").checked;
         obj.cafe=document.getElementById("Cafe").checked;
         obj.wifi=document.getElementById("Wifi").checked;
-        obj.kids=document.getElementById("Kids").checked;
-        console.log(obj.nomt);
-        console.log(obj.loct);
-        console.log(obj.nbrp);
-        console.log(obj.numt.length);
-        console.log(obj.prixt);
-        
-        
+        obj.kids=document.getElementById("Kids").checked;        
         t.push(obj);
         localStorage.setItem("addt",JSON.stringify(t));
         alert("vous avez ajouter un terrain")
