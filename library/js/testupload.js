@@ -9,12 +9,21 @@ function openFile(event) {
     reader.onload = function () {
 
         img = reader.result;
-
         console.log(img);
 
-    };
+        
 
+    };
     reader.readAsDataURL(input.files[0]);
+}
+
+function showImage(){
+    for (var i=0; i < window.localStorage.length; i++){
+        var res = window.localStorage.getItem(window.localstorage.key(i))
+        var image = new Image()
+        image.src = res;
+        parentDiv.appendChild(image)
+    }
 }
 
 
@@ -23,20 +32,3 @@ function openFile(event) {
 
 
 
-<div class="row form-group mb-4">
-
-    <div class="col-md-12 font-weight-bold"><h3>Image</h3></div>
-
-    <div class="col-md-12 mb-3 mb-md-0">
-
-
-
-        <input id="image" type="file" onchange="openFile(event)" name="myFile" class="form-control">
-
-                                                 
-
-                                                </div>
-
-
-
-    </div>

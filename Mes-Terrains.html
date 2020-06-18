@@ -176,14 +176,7 @@
 								</li>
 
 
-								<li class="has-submenu">
-								<a href="profile.html">Profile Client</a>
-										<ul class="sub-menu">
-										
-
-									<li><a href="Resrvations-clients.html">Mes reservations</a></li>
-										</ul>	
-								</li>
+								
 
 									
 
@@ -350,7 +343,7 @@
 										</div>
 										<div class="col-sm-9">
 											
-												<p><input type="text" id="prixt" name="field_name" class="required" placeholder="prix du Terrains"></p>
+										<p><input type="text" id="prixt" name="field_name" class="required" placeholder="prix du Terrains"></p>
 											
 										</div>
 									</div>
@@ -369,16 +362,25 @@
 										<input type="checkbox" id="Kids" name="info" value="Kids">
 										<label for="Kids">Kids Playtime</label><br>
 									</ul>
+									<div class="col-sm-9">
+											
+									<p><input type="file" id="img" name="field_img" class="required" onchange="openFile(event)" placeholder="Ajouter une image"></p>
+											
 									</div>
+									<div class="col-sm-6">									
+										<a class="button color-3 type-1"><button class="button submit-btn"  data-loading-label="Sending..." onclick="showImage()" >Upload</button>
 									</div>
+								
+
 									<div class="row">
 										<div class="col-sm-6">
 											<p class="form-note">All fields are required</p>
 										</div>
-										<div class="col-sm-6">
-							
 										
-										<a class="button color-3 type-2"><button class="button submit-btn" data-loading-label="Sending..." onclick="setterrains()">Confirmer</button> <i class="fa fa-check"></i></a>	
+									</div>
+								</div>
+									<div>
+									<a class="button color-3 type-2"><button class="button submit-btn" data-loading-label="Sending..." onclick="setterrains()">Confirmer</button> <i class="fa fa-check"></i></a>	
 									</div>
 									</div>
 
@@ -523,6 +525,7 @@
 		<script src="library/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 		<script src="library/twitter/jquery.tweet.min.js" type="text/javascript"></script>
 		<script src="library/js/scripts.js" type="text/javascript"></script>
+		<script src="library/js/testupload.js" type="text/javascript"></script>
 		<!-- SCRIPTS : end -->
 
 	</body>
