@@ -23,14 +23,36 @@ function setterrains(){
         obj.wifi=document.getElementById("Wifi").checked;
         obj.kids=document.getElementById("Kids").checked;        
         t.push(obj);
-        localStorage.setItem("addt",JSON.stringify(t));
+        localStorage.setItem("addt", JSON.stringify(t));
+        listimage = [];
         alert("vous avez ajouter un terrain")
     }
-    else{
+    else {
         alert("veuillez remplir tous les champs");
         //console.log(    (document.getElementById("namet").value !="") +' '+ (document.getElementById("localisation").value!="") +' '+ (document.getElementById("Nbr_pr").value!="") +' '+ (document.getElementById("numt").length == 8) +' '+
-         //(document.getElementById("prixt").value!=""))
-            ;
-        
+        //(document.getElementById("prixt").value!=""))
+        ;
+
+    }
+
+}
+var element = "";
+function showImage() {
+    for (var i = 0; i < t.length; i++) {
+        element += `	<div class="project-container">
+        <div class="project-header">
+            <a class="project-thumb lightbox" href="dummies/property_01.jpg" data-lightbox-group="dummy-projects">
+                <img alt="" src="${t[i].img[0]}">
+                <span class="overlay"><span><span><i class="fa fa-search"></i> Zoom In</span></span></span>
+            </a>
+            
+        </div>
+        <div class="project-content">
+            <h4 class="project-title"><a href="property-details-swap.html">${t[i].loct}</a></h4>
+            <h5 class="project-category">${t[i].nomt}</h5>
+        </div>
+    </div>
+`
     }
 }
+
