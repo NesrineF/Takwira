@@ -1,5 +1,7 @@
 function setusers(){
     var t = JSON.parse(localStorage.getItem("users")) || [];
+    console.log("register" + t);
+    
     var obj = new Object();
     obj.id=Math.floor(Math.random()*1000);
     obj.nom=document.getElementById("username").value;

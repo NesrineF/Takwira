@@ -1,8 +1,16 @@
 function setterrains(){
+    var t1 = JSON.parse(localStorage.getItem("con"));
+    
+    var obj1 = new Object();
+    console.log("rrrrrrrrrrrrr" + t1);
+    
+    
     var t = JSON.parse(localStorage.getItem("addt")) || [];
     var obj = new Object();
     if ((document.getElementById("namet").value !="") && (document.getElementById("villes").value !="") && (document.getElementById("localisation").value!="") && (document.getElementById("Nbr_pr").value!="") && (document.getElementById("numt").value.length == 8) && (document.getElementById("prixt").value!="")){
         obj.id=Math.floor(Math.random()*1000);
+        obj.idu=1;
+        console.log(obj1.id);
         obj.nomt=document.getElementById("namet").value;
         obj.loct=document.getElementById("localisation").value ;
         obj.nbrp=document.getElementById("Nbr_pr").value ;
