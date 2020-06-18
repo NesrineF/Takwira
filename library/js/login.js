@@ -4,8 +4,6 @@ function verifyuser(){
     x=document.getElementById("emailLog").value;
     y=document.getElementById("pwdLog").value;
     var z=t.find( users => users.email == x && users.pwd == y);
-
-    
      
     if (z.switch == false){
         localStorage.setItem("con", JSON.stringify(z));
@@ -22,4 +20,5 @@ function verifyuser(){
     console.log("propPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP");}
     else { alert("verify")
         window.location.href="register.html";}
-}
+
+    }
