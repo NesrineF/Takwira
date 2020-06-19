@@ -62,6 +62,7 @@ function setterrains(){
 }
 var element = "";
 function showImage() {
+    var t = JSON.parse(localStorage.getItem("addt")) || [];
     for (var i = 0; i < t.length; i++) {
         element += `	<div class="project-container">
         <div class="project-header">
