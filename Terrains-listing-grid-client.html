@@ -20,8 +20,8 @@
 		<link rel="stylesheet" type="text/css" href="library/css/animate.custom.css">
 		<link rel="stylesheet" type="text/css" href="library/css/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="library/css/style.css">
-        <link rel="stylesheet" type="text/css" href="library/css/skins/default.css">
-        <link rel="stylesheet" type="text/css" href="library/css/switch.css">
+		<link rel="stylesheet" type="text/css" href="library/css/skins/default.css">
+		<link rel="stylesheet" type="text/css" href="library/css/skins/time.css">
 		<!--link rel="stylesheet" type="text/css" href="library/css/custom.css"> uncomment if you want to use custom CSS definitions -->
 		<!-- STYLESHEETS : end -->
 
@@ -55,80 +55,39 @@
 
 								<!-- SEARCH INPUT : begin -->
 								<div class="search-input">
-									<i class="ico fa fa-search"></i>
-									<i class="close fa fa-times"></i>
-									<input type="text">
+
+									<select name="villes" id="villes" onchange="searcht()">
+										<option value="" disabled selected>Villes</option>
+										<option value="Ariena">Ariena</option>
+										<option value="Beja">Beja</option>
+										<option value="BenArous">Ben Arous</option>
+										<option value="Bizerte">Bizerte</option>
+										<option value="Gabes">Gabes</option>
+										<option value="Gafsa">Gafsa</option>
+										<option value="Jendouba">Jendouba</option>
+										<option value="Kairouan">Kairouan</option>
+										<option value="Kasserine">Kasserine</option>
+										<option value="Kébili">Kébili</option>
+										<option value="Kef">Kef</option>
+										<option value="Mahdia">Mahdia</option>
+										<option value="Manouba">Manouba</option>
+										<option value="Médenine">Médenine</option>
+										<option value="Monastir">Monastir</option>
+										<option value="Nabeul">Nabeul</option>
+										<option value="Sfax">Sfax</option>
+										<option value="Sidi Bouzid">Sidi Bouzid</option>
+										<option value="Siliana">Siliana</option>
+										<option value="Sousse">Sousse</option>
+										<option value="Tataouine">Tataouine</option>
+										<option value="Tozeur">Tozeur</option>
+										<option value="Tunis">Tunis</option>
+										<option value="Zaghouan">Zaghouan</option>
+									
+
+									</select>
+
 								</div>
-								<!-- SEARCH INPUT : end -->
-
-								<!-- SEARCH ADVANCED : begin -->
-								<div class="header-form search-advanced">
-									<div class="search-advanced-inner">
-
-										<!-- ARRIVAL DATE, DEPARTURE DATE : begin -->
-										<p class="form-row clearfix">
-											<span class="calendar-input input-left" title="Arrival">
-												<input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-												<i class="fa fa-calendar"></i>
-											</span>
-											<span class="calendar-input input-right" title="Departure">
-												<input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
-												<i class="fa fa-calendar"></i>
-											</span>
-										</p>
-										<!-- ARRIVAL DATE, DEPARTURE DATE : end -->
-
-										<!-- NUMBER OF ADULTS AN CHILDREN : begin -->
-										<p class="form-row clearfix">
-											<span class="select-box input-left" title="Adults">
-												<select name="adults" data-placeholder="Adults">
-													<option>Adults</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</span>
-											<span class="select-box input-right" title="Children">
-												<select name="children" data-placeholder="Children">
-													<option>Children</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</span>
-										</p>
-										<!-- NUMBER OF ADULTS AN CHILDREN : end -->
-
-										<!-- TYPE : begin -->
-										<p class="form-row textalign-center radio-inputs">
-											<span class="radio-input">
-												<input id="type_swap" type="radio" name="type" value="swap" checked="checked">
-												<label for="type_swap">Swap</label>
-											</span>
-											<span class="radio-input">
-												<input id="type_book" type="radio" name="type" value="book">
-												<label for="type_book">Book</label>
-											</span>
-											<span class="radio-input">
-												<input id="type_rent" type="radio" name="type" value="rent">
-												<label for="type_rent">Rent</label>
-											</span>
-										</p>
-										<!-- TYPE : end -->
-
-										<hr class="form-divider">
-										<p class="form-row">
-											<button class="submit-btn button"><i class="fa fa-search"></i> Search</button>
-										</p>
-
-									</div>
-								</div>
-								<!-- SEARCH ADVANCED : end -->
-
+								<!--search iput: end-->
 							</form>
 						</div>
 						<!-- HEADER SEARCH : end -->
@@ -555,7 +514,7 @@
 												</span>
 												<span>
 												
-                                                    <input class="time2" type="time" id="appt" name="appt" "> 
+                                                    <input class="time2" type="time" id="appt" name="appt"> 
     
                                                     
                                                 </span>
@@ -575,7 +534,7 @@
 													</select>
 												</span>
 												
-											
+											</p>
 											<!-- NUMBER OF ADULTS AN CHILDREN : end -->
 
 											<p class="form-row">
@@ -586,6 +545,9 @@
 										<!-- FORM SWAP : begin -->
 
 										
+										
+
+									</div>
 									<!-- PROPERTIES SEARCH BASIC : end -->
 
 									<hr class="form-divider">
@@ -604,8 +566,8 @@
 													<div class="slider-range-container">
 														<div class="slider-range" data-min="100" data-max="2000" data-step="100" data-default-min="100" data-default-max="500" data-currency="$"></div>
 														<div class="clearfix">
-															<input type="text" class="range-from" value=" 50Dt">
-															<input type="text" class="range-to" value="200Dt">
+															<input type="text" class="range-from" value="Dt 10">
+															<input type="text" class="range-to" value="Dt 500">
 														</div>
 													</div>
 
@@ -669,57 +631,26 @@
 												</div>
 											</div>
 											<!-- RATING FILTER : end -->
-<!-- ADDITIONAL FILTER : begin -->
-<div class="additional-filter toggle-container">
-    <h5 class="toggle-title">Additional Preferences</h5>
-    <div class="toggle-content">
 
-        <ul class="custom-list additional-filter-list">
-            
-            <li>
-                <span class="checkbox-input">
-                    <input type="checkbox" id="additional-filter-garden">
-                    <label for="additional-filter-garden">Garden</label>
-                </span>
-            </li>
-            <li>
-                <span class="checkbox-input">
-                    <input type="checkbox" id="additional-filter-swimming-pool">
-                    <label for="additional-filter-swimming-pool">Swimming Pool</label>
-                </span>
-            </li>
-            <li>
-                <span class="checkbox-input">
-                    <input type="checkbox" id="additional-filter-sea-view">
-                    <label for="additional-filter-sea-view">Cafeteria</label>
-                </span>
-            </li>
-            
-            <li>
-                <span class="checkbox-input">
-                    <input type="checkbox" id="additional-filter-parking">
-                    <label for="additional-filter-parking">Parking</label>
-                </span>
-            </li>
-            <li>
-                <span class="checkbox-input">
-                    <input type="checkbox" id="additional-filter-internet-connection">
-                    <label for="additional-filter-internet-connection">Internet Connection</label>
-                </span>
-            </li>
-            
-            <li>
-                <span class="checkbox-input">
-                    <input type="checkbox" id="additional-filter-separate-toilet">
-                    <label for="additional-filter-separate-toilet">Vestiare</label>
-                </span>
-            </li>
-            
-        </ul>
-
-    </div>
-</div>
-<!-- ADDITIONAL FILTER : end -->
+											<!-- ADDITIONAL FILTER : begin -->
+											<div class="toggle-container property-additional">
+												<h5 class="toggle-title">Plus de Details</h5>
+												<div class="toggle-content">
+											<ul class="custom-list check-list">
+												<input type="checkbox" id="Parking" name="info" value="Parking">
+												<label for="Parking">Parking</label><br>
+												<input type="checkbox" id="Swiming" name="info" value="Swiming">
+												<label for="Swiming">Swiming Pool</label><br>
+												<input type="checkbox" id="Cafe" name="info" value="Cafe">
+												<label for="Cafe">Cafeteria</label><br>
+												<input type="checkbox" id="Wifi" name="info" value="Wifi">
+												<label for="Wifi">Wifi</label><br>
+												<input type="checkbox" id="Kids" name="info" value="Kids">
+												<label for="Kids">Kids Playtime</label><br>
+											</ul>
+										</div>
+									</div>
+											<!-- ADDITIONAL FILTER : end -->
 
 										</form>
 									</div>

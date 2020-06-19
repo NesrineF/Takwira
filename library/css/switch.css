@@ -48,20 +48,7 @@
     border-radius: 7px;
 
   }
-  .time2{
-    background-color: #fff;
-    border-color: #e6e6e6!important;
-    border-radius: 7px;
-    color: #999999;
-    
-    margin: 0;
-    padding: 10px 15px;
-    width: 50%;
-    height: 40px;
-    border: 1px solid transparent;
-    
-    font: 16px 'Varela Round', sans-serif;
-  }
+  
   .switch-input:checked + .switch-label::before {
     background-color: #020E6A;
   }

@@ -21,7 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="library/css/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="library/css/style.css">
         <link rel="stylesheet" type="text/css" href="library/css/skins/default.css">
-        <link rel="stylesheet" type="text/css" href="library/css/switch.css">
+        <link rel="stylesheet" type="text/css" href="library/css/skins/time.css">
 		<!--link rel="stylesheet" type="text/css" href="library/css/custom.css"> uncomment if you want to use custom CSS definitions -->
 		<!-- STYLESHEETS : end -->
 
@@ -53,81 +53,41 @@
 						<div class="header-search">
 							<form class="default-form" action="http://new.uouapps.com/casa/index.html">
 
-								<!-- SEARCH INPUT : begin -->
 								<div class="search-input">
-									<i class="ico fa fa-search"></i>
-									<i class="close fa fa-times"></i>
-									<input type="text">
+
+									<select name="villes" id="villes" onchange="searcht()">
+										<option value="" disabled selected>Villes</option>
+										<option value="Ariena">Ariena</option>
+										<option value="Beja">Beja</option>
+										<option value="BenArous">Ben Arous</option>
+										<option value="Bizerte">Bizerte</option>
+										<option value="Gabes">Gabes</option>
+										<option value="Gafsa">Gafsa</option>
+										<option value="Jendouba">Jendouba</option>
+										<option value="Kairouan">Kairouan</option>
+										<option value="Kasserine">Kasserine</option>
+										<option value="Kébili">Kébili</option>
+										<option value="Kef">Kef</option>
+										<option value="Mahdia">Mahdia</option>
+										<option value="Manouba">Manouba</option>
+										<option value="Médenine">Médenine</option>
+										<option value="Monastir">Monastir</option>
+										<option value="Nabeul">Nabeul</option>
+										<option value="Sfax">Sfax</option>
+										<option value="Sidi Bouzid">Sidi Bouzid</option>
+										<option value="Siliana">Siliana</option>
+										<option value="Sousse">Sousse</option>
+										<option value="Tataouine">Tataouine</option>
+										<option value="Tozeur">Tozeur</option>
+										<option value="Tunis">Tunis</option>
+										<option value="Zaghouan">Zaghouan</option>
+									
+
+									</select>
+
 								</div>
+
 								<!-- SEARCH INPUT : end -->
-
-								<!-- SEARCH ADVANCED : begin -->
-								<div class="header-form search-advanced">
-									<div class="search-advanced-inner">
-
-										<!-- ARRIVAL DATE, DEPARTURE DATE : begin -->
-										<p class="form-row clearfix">
-											<span class="calendar-input input-left" title="Arrival">
-												<input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-												<i class="fa fa-calendar"></i>
-											</span>
-											<span class="calendar-input input-right" title="Departure">
-												<input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
-												<i class="fa fa-calendar"></i>
-											</span>
-										</p>
-										<!-- ARRIVAL DATE, DEPARTURE DATE : end -->
-
-										<!-- NUMBER OF ADULTS AN CHILDREN : begin -->
-										<p class="form-row clearfix">
-											<span class="select-box input-left" title="Adults">
-												<select name="adults" data-placeholder="Adults">
-													<option>Adults</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</span>
-											<span class="select-box input-right" title="Children">
-												<select name="children" data-placeholder="Children">
-													<option>Children</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</span>
-										</p>
-										<!-- NUMBER OF ADULTS AN CHILDREN : end -->
-
-										<!-- TYPE : begin -->
-										<p class="form-row textalign-center radio-inputs">
-											<span class="radio-input">
-												<input id="type_swap" type="radio" name="type" value="swap" checked="checked">
-												<label for="type_swap">Swap</label>
-											</span>
-											<span class="radio-input">
-												<input id="type_book" type="radio" name="type" value="book">
-												<label for="type_book">Book</label>
-											</span>
-											<span class="radio-input">
-												<input id="type_rent" type="radio" name="type" value="rent">
-												<label for="type_rent">Rent</label>
-											</span>
-										</p>
-										<!-- TYPE : end -->
-
-										<hr class="form-divider">
-										<p class="form-row">
-											<button class="submit-btn button"><i class="fa fa-search"></i> Search</button>
-										</p>
-
-									</div>
-								</div>
-								<!-- SEARCH ADVANCED : end -->
 
 							</form>
 						</div>
@@ -559,28 +519,14 @@
 												</span>
 												<span>
 												
-                                                    <input class="time2" type="time" id="appt" name="appt" "> 
+                                                    <input class="time2" type="time" id="appt" name="appt"> 
     
                                                     
                                                 </span>
 											</p>
 											<!-- ARRIVAL DATE, DEPARTURE DATE : end -->
 
-											<!-- NUMBER OF ADULTS AN CHILDREN : begin -->
-											<p class="form-row clearfix">
-												<span class="select-box input-left" title="Adults">
-													<select name="adults" data-placeholder="Adults">
-														<option>Adults</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-														<option value="5">5</option>
-													</select>
-												</span>
-												
-											
-											<!-- NUMBER OF ADULTS AN CHILDREN : end -->
+										
 
 											<p class="form-row">
 												<button class="button submit-btn"><i class="fa fa-search"></i> Search</button>

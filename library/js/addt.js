@@ -1,3 +1,25 @@
+var img = "";
+var listimage = []
+var parentDiv = document.getElementById("change")
+
+function openFile(event) {
+
+    var input = event.target;
+
+    var reader = new FileReader();
+
+    reader.onload = function () {
+
+        img = reader.result;
+        console.log(img);
+        listimage.push(img);
+
+        
+
+    };
+    reader.readAsDataURL(input.files[0]);
+}
+
 function setterrains(){
     var t1 = JSON.parse(localStorage.getItem("con"));
     
@@ -21,7 +43,10 @@ function setterrains(){
         obj.swim=document.getElementById("Swiming").checked;
         obj.cafe=document.getElementById("Cafe").checked;
         obj.wifi=document.getElementById("Wifi").checked;
-        obj.kids=document.getElementById("Kids").checked;        
+        obj.kids=document.getElementById("Kids").checked;   
+        var Image = document.getElementById("img").value;
+        obj.img = listimage;
+        console.log(obj.img);     
         t.push(obj);
         localStorage.setItem("addt", JSON.stringify(t));
         listimage = [];
