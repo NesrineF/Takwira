@@ -79,5 +79,6 @@ function showImage() {
     </div>
 `
     }
+    document.getElementById("list_terrain").innerHTML= element;
 }
 
