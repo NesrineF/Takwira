@@ -23,7 +23,6 @@ function openFile(event) {
 function setterrains(){
     var t1 = JSON.parse(localStorage.getItem("con"));
     
-    var obj1 = new Object();
     console.log("rrrrrrrrrrrrr" + t1);
     
     
@@ -31,7 +30,7 @@ function setterrains(){
     var obj = new Object();
     if ((document.getElementById("namet").value !="") && (document.getElementById("villes").value !="") && (document.getElementById("localisation").value!="") && (document.getElementById("Nbr_pr").value!="") && (document.getElementById("numt").value.length == 8) && (document.getElementById("prixt").value!="")){
         obj.id=Math.floor(Math.random()*1000);
-        obj.idu=1;
+        obj.idu=t1.id;
         console.log(obj1.id);
         obj.nomt=document.getElementById("namet").value;
         obj.loct=document.getElementById("localisation").value ;
@@ -61,16 +60,10 @@ function setterrains(){
     }
 
 }
-
 var element = "";
 function showImage() {
-    var t = JSON.parse(localStorage.getItem("addt")) || [];
-    console.log(t);
-    
     for (var i = 0; i < t.length; i++) {
-        element += `	
-        
-        <div class="project-container">
+        element += `	<div class="project-container">
         <div class="project-header">
             <a class="project-thumb lightbox" href="dummies/property_01.jpg" data-lightbox-group="dummy-projects">
                 <img alt="" src="${t[i].img[0]}">
@@ -83,9 +76,7 @@ function showImage() {
             <h5 class="project-category">${t[i].nomt}</h5>
         </div>
     </div>
-    
 `
     }
-    document.getElementById("list_terrain").innerHTML= element;
 }
 
