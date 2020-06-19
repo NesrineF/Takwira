@@ -61,10 +61,16 @@ function setterrains(){
     }
 
 }
+
 var element = "";
 function showImage() {
+    var t = JSON.parse(localStorage.getItem("addt")) || [];
+    console.log(t);
+    
     for (var i = 0; i < t.length; i++) {
-        element += `	<div class="project-container">
+        element += `	
+        
+        <div class="project-container">
         <div class="project-header">
             <a class="project-thumb lightbox" href="dummies/property_01.jpg" data-lightbox-group="dummy-projects">
                 <img alt="" src="${t[i].img[0]}">
@@ -77,7 +83,9 @@ function showImage() {
             <h5 class="project-category">${t[i].nomt}</h5>
         </div>
     </div>
+    
 `
     }
+    document.getElementById("list_terrain").innerHTML= element;
 }
 

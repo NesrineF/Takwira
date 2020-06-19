@@ -31,7 +31,7 @@
 		<script src="library/js/modernizr.custom.min.js" type="text/javascript"></script>
 
 	</head>
-	<body class="enable-fixed-header enable-style-switcher enable-inview-animations">
+	<body class="enable-fixed-header enable-style-switcher enable-inview-animations" onload="showImage();">
 
 		<!-- HEADER : begin -->
 		<header id="header">
@@ -252,10 +252,10 @@
 			<section class="content-section">
 				<div class="container">
 
-					<div class="col-md-6">
+					<div id="list_terrain" class="col-md-6">
 
 						<!-- PROJECT 1 : begin -->
-						<div class="project-container" onload="showImage()">
+						<div class="project-container" >
 							<div class="project-header">
 								<a class="project-thumb lightbox" href="dummies/property_01.jpg" data-lightbox-group="dummy-projects">
 									<img alt="" src="">
