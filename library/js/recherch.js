@@ -1,5 +1,5 @@
 function load(){
-    //var t = JSON.parse(localStorage.getItem("addt")) || [];
+    //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
     var t= JSON.parse(localStorage.getItem("recherch"));
     var list=document.getElementById("resultat")
 var element =""
