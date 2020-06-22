@@ -20,7 +20,6 @@ function openFile(event) {
     reader.readAsDataURL(input.files[0]);
 }
 function load(){
-    //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
     var t= JSON.parse(localStorage.getItem("recherch"));
     var list=document.getElementById("resultat")
 var element =""
@@ -48,5 +47,6 @@ var element =""
     </li>`
         
     }
-    list.innerHTML = element;
+    document.getElementById("list_terrain2").innerHTML= element;
+}
 }
