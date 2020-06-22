@@ -8,6 +8,7 @@ function searcht(){
         /* hezou l page list 
         afficher le resultat
         */
+       window.location.href="./../terrains-listing-grid.html"
        localStorage.setItem("recherch",JSON.stringify(z))
     } else {
         alert('no results !')
