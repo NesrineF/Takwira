@@ -24,7 +24,7 @@ function setterrains(){
     var t1 = JSON.parse(localStorage.getItem("con"));
     var obj1 = new Object();
     
-    console.log("rrrrrrrrrrrrr" + t1);
+   // console.log("rrrrrrrrrrrrr" + t1);
     
     
     var t = JSON.parse(localStorage.getItem("addt")) || [];
@@ -46,8 +46,10 @@ function setterrains(){
         obj.kids=document.getElementById("Kids").checked;   
         var Image = document.getElementById("img").value;
         obj.img = listimage;     
+      //  console.log("objet" + obj);
+        
         t.push(obj);
-        localStorage.setItem("addt", JSON.stringify(t));
+        localStorage.setItem("addt",JSON.stringify(t));
         listimage = [];
         alert("vous avez ajouter un terrain")
     }
