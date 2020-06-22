@@ -1,3 +1,24 @@
+var img = "";
+var listimage = []
+var parentDiv = document.getElementById("change")
+
+function openFile(event) {
+
+    var input = event.target;
+
+    var reader = new FileReader();
+
+    reader.onload = function () {
+
+        img = reader.result;
+        console.log(img);
+        listimage.push(img);
+
+        
+
+    };
+    reader.readAsDataURL(input.files[0]);
+}
 function load(){
     //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
     var t= JSON.parse(localStorage.getItem("recherch"));
@@ -7,7 +28,7 @@ var element =""
         
         element += `<li class="property first-in-row odd">
         <a href="#" class="property-thumb">
-            <img src="dummies/property_thumb_01.jpg" alt="">
+            <img src="${t[i].img{0}}" alt="">
             <span class="overlay"><span><i class="fa fa-search"></i> View More</span></span>
         </a>
         <div class="property-content">
