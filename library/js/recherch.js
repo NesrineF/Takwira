@@ -15,13 +15,9 @@ function load() {
                 <h4 class="property-title"><a href="#">${t[i].nomt}</a></h4>
                 <h5 class="property-location">${t[i].villes}</h5>
                 <p class="property-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit.</p>
-                <ul class="custom-list property-icons">
-                    <li class="beds" title="beds"><i></i>2</li>
-                    <li class="people" title="people"><i></i>4</li>
-                    <li class="bathrooms" title="bathrooms"><i></i>1</li>
-                </ul>
+                
                 <div class="property-price-rating">
-                    <div class="property-price"><strong>$ 37</strong> / night</div>
+                    <div class="property-price"><strong>${t[i].prixt}</strong> / night</div>
                     <div class="property-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
             </div>
