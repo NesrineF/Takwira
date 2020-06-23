@@ -52,6 +52,7 @@ function setterrains(){
         localStorage.setItem("addt",JSON.stringify(t));
         listimage = [];
         alert("vous avez ajouter un terrain")
+        window.location.reload();
     }
     else {
         alert("veuillez remplir tous les champs");
