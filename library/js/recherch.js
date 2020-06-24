@@ -7,7 +7,8 @@ function load() {
     var list = document.getElementById("resultat")
     var element = ""
     for (let i = 0; i < t.length; i++) {
-
+        console.log(t[i].prixt);
+        
         element += `<li class="property first-in-row odd">
         <a href="#" class="property-thumb">
             <img src="${t[i].img[0]} " alt="">
