@@ -11,7 +11,7 @@ function searcht(){
         */    
         localStorage.setItem("recherch",JSON.stringify(z))
 
-       window.location.href="./../recherch.html"
+       window.location.href="./../Terrains-listing-grid.html"
     } else {
         alert('no results !')
     }
