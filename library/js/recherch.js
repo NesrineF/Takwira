@@ -4,6 +4,9 @@ var parentDiv = document.getElementById("change")
 function load() {
     //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
     var t = JSON.parse(localStorage.getItem("recherch"));
+    localStorage.removeItem("profil");
+
+
     var list = document.getElementById("resultat")
     var element = ""
     for (let i = 0; i < t.length; i++) {
@@ -26,6 +29,8 @@ function load() {
         
     }
     list.innerHTML = element;
+    localStorage.removeItem("recherch");
+
 }
 
 function openFile(event) {
@@ -48,5 +53,13 @@ function openFile(event) {
 
 function func(e){
     console.log(e);
+    var t = JSON.parse(localStorage.getItem("addt")) || [];
+    window.location.href="./../property-details-swap.html";
+    var z=t.find(addt => addt.id ==e);
+    localStorage.setItem("profil",JSON.stringify(z));
+
     
 }
+
+
+

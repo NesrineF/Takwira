@@ -1,5 +1,6 @@
 function searcht(){
         var t = JSON.parse(localStorage.getItem("addt")) || [];
+        localStorage.get
         var obj = new Object();
         x=document.getElementById("villes").value;
         var z=t.filter( addt => addt.villes == x);
