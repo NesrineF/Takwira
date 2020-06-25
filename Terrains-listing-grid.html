@@ -34,6 +34,7 @@
 		<script src="library/js/recherch.js" type="text/javascript"></script>
 		<script src="library/js/search.js" type="text/javascript"></script>
 		<script src="library/js/logout.js"></script>
+		<script src="library/js/redirect_terrain.js"></script>
 
 	</head>
 	<body class="enable-fixed-header enable-style-switcher enable-inview-animations" onload="load()">
@@ -270,8 +271,8 @@
 
 										<!-- PROPERTY 1 : begin -->
 										<li class="property first-in-row odd">
-											<a href="#" class="property-thumb">
-												<img src="dummies/property_thumb_01.jpg" alt="">
+											<a class="property-thumb" onclick="getID()">
+												<img src="dummies/property_thumb_01.jpg" alt="" onclick="profil_terrain()">
 												<span class="overlay"><span><i class="fa fa-search"></i> View More</span></span>
 											</a>
 											<div class="property-content">
@@ -293,7 +294,7 @@
 
 										<!-- PROPERTY 2 : begin -->
 										<li class="property">
-											<a href="#" class="property-thumb">
+											<a  class="property-thumb">
 												<img src="dummies/property_thumb_02.jpg" alt="">
 												<span class="overlay"><span><i class="fa fa-search"></i> View More</span></span>
 											</a>
@@ -316,7 +317,7 @@
 
 										<!-- PROPERTY 3 : begin -->
 										<li class="property odd">
-											<a href="#" class="property-thumb">
+											<a class="property-thumb">
 												<img src="dummies/property_thumb_03.jpg" alt="">
 												<span class="overlay"><span><i class="fa fa-search"></i> View More</span></span>
 											</a>
@@ -339,7 +340,7 @@
 
 										<!-- PROPERTY 4 : begin -->
 										<li class="property first-in-row">
-											<a href="#" class="property-thumb">
+											<a  class="property-thumb">
 												<img src="dummies/property_thumb_04.jpg" alt="">
 												<span class="overlay"><span><i class="fa fa-search"></i> View More</span></span>
 											</a>
