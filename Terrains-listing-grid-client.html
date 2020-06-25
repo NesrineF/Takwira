@@ -504,7 +504,35 @@
 
 											<!-- SEARCH INPUT : begin -->
 											<p class="search-input">
-												<input type="text" placeholder="Choisissez votre ville?">
+												<select name="villes" id="villes" onchange="searcht()">
+													<option value="" disabled selected>Villes</option>
+													<option value="Ariena">Ariena</option>
+													<option value="Beja">Beja</option>
+													<option value="BenArous">Ben Arous</option>
+													<option value="Bizerte">Bizerte</option>
+													<option value="Gabes">Gabes</option>
+													<option value="Gafsa">Gafsa</option>
+													<option value="Jendouba">Jendouba</option>
+													<option value="Kairouan">Kairouan</option>
+													<option value="Kasserine">Kasserine</option>
+													<option value="Kébili">Kébili</option>
+													<option value="Kef">Kef</option>
+													<option value="Mahdia">Mahdia</option>
+													<option value="Manouba">Manouba</option>
+													<option value="Médenine">Médenine</option>
+													<option value="Monastir">Monastir</option>
+													<option value="Nabeul">Nabeul</option>
+													<option value="Sfax">Sfax</option>
+													<option value="Sidi Bouzid">Sidi Bouzid</option>
+													<option value="Siliana">Siliana</option>
+													<option value="Sousse">Sousse</option>
+													<option value="Tataouine">Tataouine</option>
+													<option value="Tozeur">Tozeur</option>
+													<option value="Tunis">Tunis</option>
+													<option value="Zaghouan">Zaghouan</option>
+												
+			
+												</select>
 											</p>
 											<!-- SEARCH INPUT : end -->
 
@@ -515,8 +543,19 @@
 													<i class="fa fa-calendar"></i>
 												</span>
 												<span>
-												
-                                                    <input class="time2" type="time" id="appt" name="appt"> 
+													<span class="calendar-input input-right" title="Departure">
+                                                    <select class="select-box" id="appt1" >
+														<option value="" disabled selected>Horaires</option>
+														<option value="12:30">12:30</option>
+														<option value="14:00">14:00</option>
+														<option value="15:30">15:30</option>
+														<option value="17:00">17:00</option>
+														<option value="18:30">18:30</option>
+														<option value="20:00">20:00</option>
+														<option value="21:30">21:30</option>
+														<option value="23:00">23:00</option>
+													
+													</select>
     
                                                     
                                                 </span>

@@ -109,11 +109,37 @@
 
 								<div class="search-input">
 
-									<i class="ico fa fa-search"></i>
+							
 
-									<i class="close fa fa-times"></i>
+									<select name="villes" id="villes">
+										<option value="" disabled selected>Villes</option>
+										<option value="Ariena">Ariena</option>
+										<option value="Beja">Beja</option>
+										<option value="BenArous">Ben Arous</option>
+										<option value="Bizerte">Bizerte</option>
+										<option value="Gabes">Gabes</option>
+										<option value="Gafsa">Gafsa</option>
+										<option value="Jendouba">Jendouba</option>
+										<option value="Kairouan">Kairouan</option>
+										<option value="Kasserine">Kasserine</option>
+										<option value="Kébili">Kébili</option>
+										<option value="Kef">Kef</option>
+										<option value="Mahdia">Mahdia</option>
+										<option value="Manouba">Manouba</option>
+										<option value="Médenine">Médenine</option>
+										<option value="Monastir">Monastir</option>
+										<option value="Nabeul">Nabeul</option>
+										<option value="Sfax">Sfax</option>
+										<option value="Sidi Bouzid">Sidi Bouzid</option>
+										<option value="Siliana">Siliana</option>
+										<option value="Sousse">Sousse</option>
+										<option value="Tataouine">Tataouine</option>
+										<option value="Tozeur">Tozeur</option>
+										<option value="Tunis">Tunis</option>
+										<option value="Zaghouan">Zaghouan</option>
+									
 
-									<input type="text">
+									</select>
 
 								</div>
 
@@ -131,53 +157,7 @@
 
 										<!-- ARRIVAL DATE, DEPARTURE DATE : begin -->
 
-										<p class="form-row clearfix">
-											<span class="select" title="ville">
-											<select name="villes" id="villes">
-												<option value="" disabled selected>Villes</option>
-												<option value="Ariena">Ariena</option>
-												<option value="Beja">Beja</option>
-												<option value="BenArous">Ben Arous</option>
-												<option value="Bizerte">Bizerte</option>
-												<option value="Gabes">Gabes</option>
-												<option value="Gafsa">Gafsa</option>
-												<option value="Jendouba">Jendouba</option>
-												<option value="Kairouan">Kairouan</option>
-												<option value="Kasserine">Kasserine</option>
-												<option value="Kébili">Kébili</option>
-												<option value="Kef">Kef</option>
-												<option value="Mahdia">Mahdia</option>
-												<option value="Manouba">Manouba</option>
-												<option value="Médenine">Médenine</option>
-												<option value="Monastir">Monastir</option>
-												<option value="Nabeul">Nabeul</option>
-												<option value="Sfax">Sfax</option>
-												<option value="Sidi Bouzid">Sidi Bouzid</option>
-												<option value="Siliana">Siliana</option>
-												<option value="Sousse">Sousse</option>
-												<option value="Tataouine">Tataouine</option>
-												<option value="Tozeur">Tozeur</option>
-												<option value="Tunis">Tunis</option>
-												<option value="Zaghouan">Zaghouan</option>
-											
-		
-											</select>
-										</span>
-
-											<span class="calendar-input input-left" title="Arrival">
-
-												<input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y" style="margin-top: 10px;">
-
-												<i class="fa fa-calendar"></i>
-
-											</span>
-
-											<form>
-												
-												<input class="bleuu" type="time" id="appt" name="appt" style="margin-top: 10px;"> 
-
-												
-											  </form>
+										
 										<!--	<span class="calendar-input input-right" title="Departure">
 
 												<input type="text" name="departure" placeholder="Departure" data-dateformat="m/d/y">
@@ -468,11 +448,18 @@
 									<!-- DEPARTURE DATE : begin -->
 									<span class="" title="Arrival">
 									<form>
+										<select class="select-box" id="appt1" >
+											<option value="" disabled selected>Horaires</option>
+											<option value="12:30">12:30</option>
+											<option value="14:00">14:00</option>
+											<option value="15:30">15:30</option>
+											<option value="17:00">17:00</option>
+											<option value="18:30">18:30</option>
+											<option value="20:00">20:00</option>
+											<option value="21:30">21:30</option>
+											<option value="23:00">23:00</option>
 										
-										
-										
-											<input  class="bleuu" type="time" id="appt1" name="appt1" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
-																		
+										</select>															
 									  </form>
 									</span>
 
@@ -539,7 +526,7 @@
 
 									<span class="calendar-input input-left" title="Arrival">
 
-										<input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
+										<input type="text" name="arrival" placeholder="Arrivée" data-dateformat="m/d/y">
 
 										<i class="fa fa-calendar"></i>
 

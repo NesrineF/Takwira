@@ -155,21 +155,9 @@
 
 										<!-- ARRIVAL DATE, DEPARTURE DATE : begin -->
 
-										<p class="form-row clearfix">
+									
 
-											<span class="calendar-input input-left" title="Arrival">
-
-												<input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
-
-												<i class="fa fa-calendar"></i>
-
-											</span>
-
-											<form>
-												<label for="appt">Select a time:</label>
-												<input class="bleuu" type="time" id="appt" name="appt">
-												
-											  </form>
+											
 
 										<!--	<span class="calendar-input input-right" title="Departure">
 
@@ -179,7 +167,7 @@
 
 											</span> -->
 
-										</p>
+										
 
 										<!-- ARRIVAL DATE, DEPARTURE DATE : end -->
 
@@ -454,7 +442,7 @@
 
 									<span class="calendar-input input-left" title="Arrival">
 
-										<input type="text" name="arrival" placeholder="Arrival" data-dateformat="m/d/y">
+										<input type="text" name="arrival" placeholder="Arrivée" data-dateformat="m/d/y">
 
 										<i class="fa fa-calendar"></i>
 
@@ -466,14 +454,26 @@
 
 									<!-- DEPARTURE DATE : begin -->
 									<span class="" title="Arrival">
-									<form>
-										
-										
-										
-											<input  class="bleuu" type="time" id="appt1" name="appt1" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
-																		
-									  </form>
-									</span>
+										<form>
+											
+											<select class="select-box" id="appt1" >
+												<option value="" disabled selected>Horaires</option>
+												<option value="12:30">12:30</option>
+												<option value="14:00">14:00</option>
+												<option value="15:30">15:30</option>
+												<option value="17:00">17:00</option>
+												<option value="18:30">18:30</option>
+												<option value="20:00">20:00</option>
+												<option value="21:30">21:30</option>
+												<option value="23:00">23:00</option>
+											
+											</select>
+											
+											
+												
+																			
+										  </form>
+										</span>
 
 									<!-- DEPARTURE DATE : end -->
 
