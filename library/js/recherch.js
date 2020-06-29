@@ -1,13 +1,21 @@
+var bool = false;
 var img = "";
 var listimage = []
 var parentDiv = document.getElementById("change")
+function affiche() { 
+    load();
+if (bool){console.log("Recherche 9a3da tekhem");
+}
+else{}
+}
 function load() {
+ bool = true;
     //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
     var t = JSON.parse(localStorage.getItem("recherch"));
     localStorage.removeItem("profil");
 
 
-    var list = document.getElementById("resultat")
+    var list = document.getElementById("resultat2")
     var element = ""
     for (let i = 0; i < t.length; i++) {
         console.log(t[i].prixt);
@@ -59,6 +67,32 @@ function func(e){
     localStorage.setItem("profil",JSON.stringify(z));
 
     
+}
+
+function afft(){
+     bool = false;
+    var t = JSON.parse(localStorage.getItem("addt"));
+    var element3 = ""
+    
+    var list = document.getElementById("resultat2");
+    for (let i = 0; i < t.length; i++) {
+        element3 += `<li class="property first-in-row odd">
+        <a href="#" class="property-thumb">
+            <img src="${t[i].img[0]} " alt="">
+            <div class="property-content">
+                <h4 class="property-title"><a href="#" onclick="func(${t[i].id})">${t[i].nomt}</a></h4>
+                <h5 class="property-location">${t[i].villes}</h5>
+                <p class="property-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit.</p>
+                
+                <div class="property-price-rating">
+                    <div class="property-price"><strong>${t[i].prixt}</strong> / night</div>
+                    <div class="property-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                </div>
+            </div>
+    </li > `
+        
+    }
+    list.innerHTML = element3;
 }
 
 
