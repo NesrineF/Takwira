@@ -2,15 +2,27 @@ var bool = false;
 var img = "";
 var listimage = []
 var parentDiv = document.getElementById("change")
-function affiche() { 
+function affichage(){
+    var t1 = JSON.parse(localStorage.getItem("bool")) || [];
+    var z=t1.find(bool => bool.tf );
+    
+
+
+
+    
+    if (z.tf=="true"){console.log("recherche tekhdem");
     load();
-if (bool){console.log("Recherche 9a3da tekhem");
-}
-else{}
+    }
+    else{console.log("affichage lkol yekhdem");
+    afft();
+    }
+   localStorage.removeItem("bool");
+
 }
 function load() {
  bool = true;
     //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
+    bool= true;
     var t = JSON.parse(localStorage.getItem("recherch"));
     localStorage.removeItem("profil");
 
@@ -70,12 +82,10 @@ function func(e){
 }
 
 function afft(){
-     bool = false;
     var t = JSON.parse(localStorage.getItem("addt"));
     var element3 = ""
-    
-    var list = document.getElementById("resultat2");
     for (let i = 0; i < t.length; i++) {
+        var list = document.getElementById("resultat")
         element3 += `<li class="property first-in-row odd">
         <a href="#" class="property-thumb">
             <img src="${t[i].img[0]} " alt="">

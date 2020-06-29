@@ -1,4 +1,6 @@
+var bool=false;
 function searcht(){
+    bool=true;
         var t = JSON.parse(localStorage.getItem("addt")) || [];
         localStorage.get
         var obj = new Object();
@@ -16,9 +18,17 @@ function searcht(){
     } else {
         alert('no results !')
     }
-        console.log(z);
-        
-         
-        
-    
-}
+        console.log(z);   
+        var t1 = JSON.parse(localStorage.getItem("bool")) || [];
+        var obj1 = new Object();
+        for (let index = 0; index < t1.length; index++) {
+console.log("aaaaaaaaaaaaa");
+t1[index].tf="true";
+            
+        }
+        // obj1.tf="true";
+        // t1.push(obj1);
+        localStorage.setItem("bool",JSON.stringify(t1));
+        console.log("rechercheeeeeeeeeeeeeeeee"+obj1.tf);
+
+    }
