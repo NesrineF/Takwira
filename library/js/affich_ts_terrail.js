@@ -2,6 +2,7 @@ function afft(){
     var t = JSON.parse(localStorage.getItem("addt"));
     var element3 = ""
     for (let i = 0; i < t.length; i++) {
+        var list = document.getElementById("resultat")
         element3 += `<li class="property first-in-row odd">
         <a href="#" class="property-thumb">
             <img src="${t[i].img[0]} " alt="">

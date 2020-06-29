@@ -10,6 +10,7 @@ function profil_terrain()
     element2+= `<div class="property-images">
     <div class="image-list">
         <div class="image"><img src="${p.img[0]}" alt="Short photo description should go right here"></div>
+        <div class="image"><img src="${p.img[1]}" alt="Short photo description should go right here"></div>
 
     </div>
     <div class="images-footer">
@@ -21,7 +22,7 @@ function profil_terrain()
         <button class="next-btn"><i class="fa fa-chevron-right"></i></button>
     </div>
 </div>`
-list1.innerHTML= element2;
+//list1.innerHTML= element2;
 }
 
 
