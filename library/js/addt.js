@@ -156,7 +156,9 @@ function func(e){
                     
                 }
       }
-    console.log("indexxxxx"+index);
+    console.log("indexxxxx"+t);
+    var t1=t;
+    // localStorage
     
 
    // console.log("zzzzzzzzzzzzz"+z[0].id);
