@@ -695,7 +695,7 @@ body.enable-fixed-header { padding-top: 84px; }
 
 	/* PROPERTY DETAILS */
 	.property-details { padding: 30px 30px 60px 0; }
-	.property-details .property-images { position: relative; margin-bottom: 30px; border-radius: 7px 7px 0 0; }
+	.property-details .property-	s { position: relative; margin-bottom: 30px; border-radius: 7px 7px 0 0; }
 	.property-details .property-images .owl-wrapper-outer { border-radius: 7px 7px 0 0; }
 	.property-details .property-images img { display: block; border-radius: 7px 7px 0 0; }
 	.property-details .property-images .images-footer { position: absolute; left: 0; right: 0; bottom: 0; }

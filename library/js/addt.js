@@ -79,11 +79,66 @@ function showImage() {
         </div>
         <div class="project-content">
             <h4 class="project-title"><a href="property-details-swap.html">${t[i].loct}</a></h4>
+    
             <h5 class="project-category">${t[i].nomt}</h5>
+
+<div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Modifier</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#demoModal">Suprimmer</button>
+            </div>
+        </div>
+<div class="modal fade sm" id="demoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">Modifier mon terrain</h2>
+            <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+            </button>
+        </div>
+            <div class="modal-body">
+            <form>
+            <div class="row">
+             
+            <div class="col-sm-6">
+            <label style="margin-left: -90px"> Nom Du terrain</label>
+            <input type="text" id="namet" name="field_name" class="required" placeholder="${t[i].nomt}">
+        </div>
+              
+        <div class="col-sm-6">
+        <label style="margin-left: -60px"> Nombre de personne</label>
+        <input type="text" id="namet" name="field_name" class="required" placeholder="${t[i].nbrp}">
+    </div>
+            
+             
+             
+    <div class="col-sm-6">
+    <label style="margin-left: -60px">Telephone</label>
+    <input type="text" id="namet" name="field_name" class="required" placeholder="${t[i].numt}">
+</div>
+                
+<div class="col-sm-6">
+<label style="margin-left: -60px">Prix du terrain</label>
+<input type="text" id="namet" name="field_name" class="required" placeholder="${t[i].prixt}">
+</div>
+             </div>
+            </form>
+          </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
         </div>
     </div>
 `
     }
+    
     document.getElementById("list_terrain").innerHTML= element;
 }
+
 
