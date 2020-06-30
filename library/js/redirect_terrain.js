@@ -22,6 +22,71 @@ function profil_terrain()
     </div>
 </div>`
 list1.innerHTML= element2;
+list1.innerHTML= element3;
+var list1 =document.getElementById('resultat4');
+var element4=""
+element4+= `<div class="toggle-container property-address">
+    <h5 class="toggle-title">Address</h5>
+    <div class="toggle-content">
+
+        <p>${p.loct}</p>
+
+    </div>`
+list1.innerHTML= element4;
+
+var list1 =document.getElementById('resultat3');
+var element3=""
+
+element3+= `<h5 class="toggle-title">Additional Information</h5>
+<div class="toggle-content">
+
+    <ul class="custom-list check-list">`
+
+if (p.park)
+{
+    element3+= `<li>parking</li>`
+    
+
+}
+else{
+
+}
+
+if (p.swim)
+{
+    element3+= `<li>Swimming Pool</li>`
+}
+else{
+
+}
+
+if (p.cafe)
+{
+    element3+= `<li>Caféteria</li>`
+}
+else{
+
+}
+
+if (p.wifi)
+{
+    element3+= `<li>Wifi</li>`
+}
+else{
+
+}
+
+if (p.kids)
+{
+    element3+= `<li>Kids Playtime</li>`
+}
+else{
+
+}
+`       
+    </ul>
+
+</div>`
 }
 
 
