@@ -85,7 +85,7 @@ function showImage() {
 <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Modifier</button>
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#demoModal">Suprimmer</button>
+                <button type="button" onclick="func(${t[i].id})"class="btn btn-danger">Suprimmer</button>
             </div>
         </div>
 <div class="modal fade sm" id="demoModal">
@@ -140,5 +140,41 @@ function showImage() {
     
     document.getElementById("list_terrain").innerHTML= element;
 }
+function func(e){
+    console.log(e);
+    var t = JSON.parse(localStorage.getItem("addt")) || [];
+   // window.location.href="./../property-details-swap.html";
+    var z=t.find(addt => addt.id ==e);
+    console.log("zzzzzzzzzzzzz"+t[0].id);
+    
+    const index = t.indexOf(61);
+    if (index == -1) {
+        t.splice(0, 1);
+        console.log("tttttttttttttttttttttttttttttttt"+t);
+        for (let index = 0; index < t.length; index++) {
+            console.log("aaaaaaaaaaaaaaaa"+t[index].id);
+                    
+                }
+      }
+    console.log("indexxxxx"+index);
+    
+
+   // console.log("zzzzzzzzzzzzz"+z[0].id);
+    t.splice(index, 1);
+    console.log("ba3d tafsikh"+z);
+
+
+    
+    
+   // localStorage.setItem("todelet",JSON.stringify(z));   
+}
+
+/*function delete(e){
+    console.log(e);
+    var t = JSON.parse(localStorage.getItem("addt")) || [];
+    var obj = new Object();
+    localStorage.removeItem("todelet");
+    alert('vous aves suprimmer un terrain avec succés')
+}*/
 
 
