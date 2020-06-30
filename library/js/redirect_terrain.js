@@ -3,14 +3,13 @@ function profil_terrain()
  {
     var p=JSON.parse(localStorage.getItem("profil")); 
     var list1 =document.getElementById('resultat2');
-    console.log("ppppppppppppppppppppppppppppppp"+p.img[0]);
+    //console.log("ppppppppppppppppppppppppppppppp"+p.img[0]);
     
     var element2=""
 
     element2+= `<div class="property-images">
     <div class="image-list">
-        <div class="image"><img src="${p.img[0]}" alt="Short photo description should go right here"></div>
-        <div class="image"><img src="${p.img[1]}" alt="Short photo description should go right here"></div>
+        <div class="image"><img src="${p.img[0]}" alt="hhhhhhhhhhhhhhhhhhhhhhhh"></div>
 
     </div>
     <div class="images-footer">

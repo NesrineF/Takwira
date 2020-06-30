@@ -79,6 +79,7 @@ function showImage() {
         </div>
         <div class="project-content">
             <h4 class="project-title"><a href="property-details-swap.html">${t[i].loct}</a></h4>
+            
             <h5 class="project-category">${t[i].nomt}</h5>
         </div>
     </div>
