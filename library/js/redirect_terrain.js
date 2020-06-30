@@ -22,7 +22,6 @@ function profil_terrain()
     </div>
 </div>`
 list1.innerHTML= element2;
-list1.innerHTML= element3;
 var list1 =document.getElementById('resultat4');
 var element4=""
 element4+= `<div class="toggle-container property-address">
@@ -87,8 +86,5 @@ else{
     </ul>
 
 </div>`
+list1.innerHTML= element3;
 }
-
-
-
-                                    
