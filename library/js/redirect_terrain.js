@@ -22,7 +22,7 @@ function profil_terrain()
         <button class="next-btn"><i class="fa fa-chevron-right"></i></button>
     </div>
 </div>`
-//list1.innerHTML= element2;
+list1.innerHTML= element2;
 }
 
 

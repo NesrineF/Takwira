@@ -27,7 +27,7 @@ function load() {
     localStorage.removeItem("profil");
 
 
-    var list = document.getElementById("resultat2")
+    var list = document.getElementById("resultat")
     var element = ""
     for (let i = 0; i < t.length; i++) {
         console.log(t[i].prixt);
