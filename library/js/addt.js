@@ -158,17 +158,10 @@ function func(e){
       }
     console.log("indexxxxx"+t);
     var t1=t;
-    // localStorage
-    
-
-   // console.log("zzzzzzzzzzzzz"+z[0].id);
+    localStorage.removeItem(t);
+    localStorage.setItem("addt",JSON.stringify(t1));    
     t.splice(index, 1);
-    console.log("ba3d tafsikh"+z);
-
-
-    
-    
-   // localStorage.setItem("todelet",JSON.stringify(z));   
+    console.log("ba3d tafsikh"+z); 
 }
 
 /*function delete(e){
