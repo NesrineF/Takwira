@@ -29,11 +29,21 @@ function setterrains(){
     
     var t = JSON.parse(localStorage.getItem("addt")) || [];
     var obj = new Object();
-    if ((document.getElementById("namet").value !="") && (document.getElementById("villes").value !="") && (document.getElementById("localisation").value!="") && (document.getElementById("Nbr_pr").value!="") && (document.getElementById("numt").value.length == 8) && (document.getElementById("prixt").value!="")){
+    console.log("nameterrain"+document.getElementById("nameterrain").value);
+    console.log("localisation"+document.getElementById("localisation").value);
+    console.log("Nbr_pr"+document.getElementById("Nbr_pr").value);
+    console.log("numt"+document.getElementById("numt").value);
+    console.log("prixt"+document.getElementById("prixt").value);
+    console.log("villes"+document.getElementById("villes").value);
+    console.log("Parking"+document.getElementById("Parking").value);
+    console.log("img"+document.getElementById("img").value);
+
+    
+    if ((document.getElementById("nameterrain").value !="") &&(document.getElementById("villes").value !="") && (document.getElementById("localisation").value!="") && (document.getElementById("Nbr_pr").value!="") && (document.getElementById("numt").value.length == 8) && (document.getElementById("prixt").value!="")){
         obj.id=Math.floor(Math.random()*1000);
         obj.idu=t1.id;
         console.log=(obj1.id);
-        obj.nomt=document.getElementById("namet").value;
+        obj.nomt=document.getElementById("nameterrain").value;
         obj.loct=document.getElementById("localisation").value ;
         obj.nbrp=document.getElementById("Nbr_pr").value ;
         obj.numt=document.getElementById("numt").value;
@@ -55,15 +65,21 @@ function setterrains(){
         window.location.reload();
     }
     else {
-        alert("veuillez remplir tous les champs");
-        //console.log(    (document.getElementById("namet").value !="") +' '+ (document.getElementById("localisation").value!="") +' '+ (document.getElementById("Nbr_pr").value!="") +' '+ (document.getElementById("numt").length == 8) +' '+
-        //(document.getElementById("prixt").value!=""))
-        ;
+       // alert("veuillez remplir tous les champs");
+console.log("elseeeeeeeeeee");
+
+        for (let index = 0; index < t.length; index++) {
+            console.log(t[0]);
+            
+            
+        }
+        
 
     }
 
 }
 var element = "";
+
 function showImage() {
     var t = JSON.parse(localStorage.getItem("addt")) || [];
     console.log(t);
@@ -78,14 +94,14 @@ function showImage() {
             
         </div>
         <div class="project-content">
-            <h4 class="project-title"><a href="property-details-swap.html">${t[i].loct}</a></h4>
+            <h4 class="project-title"><a href="property-details-swap.html">${t[i].nomt}</a></h4>
     
-            <h5 class="project-category">${t[i].nomt}</h5>
+            <h5 class="project-category">${t[i].loct}</h5>
 
 <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Modifier</button>
-                <button type="button" onclick="func(${t[i].id})"class="btn btn-danger">Suprimmer</button>
+                <button type="button" onclick="Delete(${t[i].id})"class="btn btn-danger">Suprimmer</button>
             </div>
         </div>
 <div class="modal fade sm" id="demoModal">
@@ -140,36 +156,34 @@ function showImage() {
     
     document.getElementById("list_terrain").innerHTML= element;
 }
-function func(e){
-    console.log(e);
+function Delete(e){
+    console.log("eeeeeeeeeeeeeeeeeeeeeeeeeeeeee"+e);
     var t = JSON.parse(localStorage.getItem("addt")) || [];
    // window.location.href="./../property-details-swap.html";
     var z=t.find(addt => addt.id ==e);
-    console.log("zzzzzzzzzzzzz"+t[0].id);
+   
+ 
+
+  
+    pos = t.map(function(e) { return e.id; }).indexOf(z.id);
     
-    const index = t.indexOf(61);
-    if (index == -1) {
-        t.splice(0, 1);
-        console.log("tttttttttttttttttttttttttttttttt"+t);
-        for (let index = 0; index < t.length; index++) {
-            console.log("aaaaaaaaaaaaaaaa"+t[index].id);
-                    
-                }
+
+    if (pos != -1) {
+        t.splice(pos, 1);
+        
       }
-    console.log("indexxxxx"+t);
     var t1=t;
     localStorage.removeItem(t);
-    localStorage.setItem("addt",JSON.stringify(t1));    
-    t.splice(index, 1);
-    console.log("ba3d tafsikh"+z); 
+    localStorage.setItem("addt",JSON.stringify(t1)); 
+    window.location.reload();
+   
+   
+}   
+
+function Update(){
+    
 }
 
-/*function delete(e){
-    console.log(e);
-    var t = JSON.parse(localStorage.getItem("addt")) || [];
-    var obj = new Object();
-    localStorage.removeItem("todelet");
-    alert('vous aves suprimmer un terrain avec succés')
-}*/
+
 
 
