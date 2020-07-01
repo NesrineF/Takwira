@@ -12,15 +12,86 @@ function profil_terrain()
         <div class="image"><img src="${p.img[0]}" alt="hhhhhhhhhhhhhhhhhhhhhhhh"></div>
 
     </div>
-    <div class="images-footer">
-        <div class="images-footer-inner">
-            <div class="image-description"></div>
-            <div class="image-counter"></div>
-        </div>
-        <button class="prev-btn"><i class="fa fa-chevron-left"></i></button>
-        <button class="next-btn"><i class="fa fa-chevron-right"></i></button>
+      </div>
+
+<div class="row">
+<div class="col-md-8">
+
+    <!-- PROPERTY DESCRIPTION : begin -->
+    <div class="property-description">
+
+    <span class="calendar-input input-left" title="Arrival">
+
+    <select class="time2" id="appt2" style="margin-top: 20px;">
+        <option value="" disabled selected>le jour</option>
+        <option value="1">Lundi</option>
+        <option value="2">Mardi</option>
+        <option value="3">Mercredi</option>
+        <option value="4">Jeudi</option>
+        <option value="5">Vendredi</option>
+        <option value="6">Samedi</option>
+        <option value="7">Dimanche</option>
+        
+    
+    </select>
+
+    
+
+  </span>
+
+ <span class="" title="Arrival">
+<form>
+
+ <select class="time2" id="appt1" >
+    <option value="" disabled selected>Horaires</option>
+    <option value="1">12:30</option>
+    <option value="2">14:00</option>
+    <option value="3">15:30</option>
+    <option value="4">17:00</option>
+    <option value="5">18:30</option>
+    <option value="6">20:00</option>
+    <option value="7">21:30</option>
+    <option value="8">23:00</option>
+
+ </select>
+
+
+    
+                                
+</form>
+</span>
+
+
     </div>
-</div>`
+    <!-- PROPERTY DESCRIPTION : end -->
+
+</div> 
+<div class="col-md-4">
+    <!-- PROPERTY PANEL : begin -->
+    <div class="property-panel">
+
+        <!-- SWAP NOW : begin -->
+        <div class="panel-item swap-now">
+            <button style="margin-top: 40px;" onclick="testb()">aaaaaa</button>													
+        </div>
+        <!-- SWAP NOW : end -->
+     </div>
+    <!-- PROPERTY PANEL : end -->
+    
+
+</div>
+</div>
+
+
+<!-- PROPERTY DETAILS : end -->
+
+</div>
+<!-- PROPERTY DETAILS : end -->
+
+</div>
+
+
+`
 list1.innerHTML= element2;
 var list1 =document.getElementById('resultat4');
 var element4=""

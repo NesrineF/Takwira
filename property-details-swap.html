@@ -20,7 +20,8 @@
 		<link rel="stylesheet" type="text/css" href="library/css/animate.custom.css">
 		<link rel="stylesheet" type="text/css" href="library/css/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="library/css/style.css">
-        <link rel="stylesheet" type="text/css" href="library/css/skins/default.css">
+		<link rel="stylesheet" type="text/css" href="library/css/skins/default.css">
+		<link rel="stylesheet" type="text/css" href="library/css/skins/time.css">
 		<!--link rel="stylesheet" type="text/css" href="library/css/custom.css"> uncomment if you want to use custom CSS definitions -->
 		<!-- STYLESHEETS : end -->
 
@@ -316,20 +317,21 @@
 								<div id="resultat2" class="property-details">
 
 									<!-- PROPERTY IMAGES : begin -->
-									<div class="property-images">
-										<div class="image-list">
-											<div class="image"><img src="dummies/property_01.jpg" alt="Short photo description should go right here"></div>
-											<div class="image"><img src="dummies/property_02.jpg" alt="Short photo description should go right here"></div>
-										</div>
-										<div class="images-footer">
-											<div class="images-footer-inner">
-												<div class="image-description"></div>
-												<div class="image-counter"></div>
-											</div>
-											<button class="prev-btn"><i class="fa fa-chevron-left"></i></button>
-											<button class="next-btn"><i class="fa fa-chevron-right"></i></button>
-										</div>
-									</div>
+										<div class="property-images">
+															<div class="image-list owl-carousel owl-theme" style="opacity: 1; display: block;">
+																<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4320px; left: 0px; display: block; transition: all 300ms ease 0s; transform: translate3d(-1440px, 0px, 0px);"><div class="owl-item" style="width: 720px;"><div class="image"><img src="dummies/property_01.jpg" alt="Short photo description should go right here"></div></div><div class="owl-item" style="width: 720px;"><div class="image"><img src="dummies/property_02.jpg" alt="Short photo description should go right here"></div></div><div class="owl-item active" style="width: 720px;"><div class="image"><img src="dummies/property_03.jpg" alt="Short photo description should go right here"></div></div></div></div>
+																
+																
+															</div>
+															<div class="images-footer">
+																<div class="images-footer-inner">
+																	<div class="image-description">Short photo description should go right here</div>
+																	<div class="image-counter">3/3</div>
+																</div>
+																<button class="prev-btn"><i class="fa fa-chevron-left"></i></button>
+																<button class="next-btn"><i class="fa fa-chevron-right"></i></button>
+															</div>
+														</div>
 									<!-- PROPERTY IMAGES : end -->
 
 									<div class="row">
@@ -338,91 +340,70 @@
 											<!-- PROPERTY DESCRIPTION : begin -->
 											<div class="property-description">
 
-												<!-- DESCRIPTION TEXT : begin -->
-												<div class="description-text">
-													</div>
-												<!-- DESCRIPTION TEXT : end -->
+                                            <span class="calendar-input input-left" title="Arrival">
 
-												<!-- USEFUL INFO : begin -->
-												<div class="useful-info">
-													
-													<div class="row">
-														<div class="col-lg-6">
-															
-														</div>
-														<div class="col-lg-6">
-															
-														</div>
-													</div>
-												</div>
-												<!-- USEFUL INFO : end -->
+                                            <select class="time2" id="jour" style="margin-top: 20px;">
+                                                <option value="" disabled selected>le jour</option>
+                                                <option value="Lundi">Lundi</option>
+                                                <option value="Mardi">Mardi</option>
+                                                <option value="Mercredi">Mercredi</option>
+                                                <option value="Jeudi">Jeudi</option>
+                                                <option value="Vendredi">Vendredi</option>
+                                                <option value="Samedi">Samedi</option>
+                                                <option value="Dimanche">Dimanche</option>
+                                                
+                                            
+                                            </select>
+    
+                                            
+    
+                                          </span>
 
-												<!-- COMMENTS : begin -->
-												<div class="comments">
-													<ul class="custom-list comment-list">
+                                         <span class="" title="Arrival">
+									    <form>
+										
+										 <select class="time2" id="time" >
+											<option value="" disabled selected>Horaires</option>
+											<option value="12:30">12:30</option>
+											<option value="14:00">14:00</option>
+											<option value="15:30">15:30</option>
+											<option value="17:00">17:00</option>
+											<option value="18:30">18:30</option>
+											<option value="20:00">20:00</option>
+											<option value="21:30">21:30</option>
+											<option value="23:00">23:00</option>
+										
+										 </select>
+										
+										
+											
+																		
+									    </form>
+									    </span>
 
-														<!-- COMMENT 1 : begin -->
-														<li class="comment">
-														
-														</li>
-														<!-- COMMENT 1 : end -->
-
-														<!-- COMMENT 2 : begin -->
-														<li class="comment">
-															
-														</li>
-														<!-- COMMENT 2 : end -->
-
-														<!-- COMMENT 3 : begin -->
-														<li class="comment">
-															</li>
-														<!-- COMMENT 3 : end -->
-
-													</ul>
-												</div>
-												<!-- COMMENTS : end -->
 
 											</div>
 											<!-- PROPERTY DESCRIPTION : end -->
 
-										</div>
+										</div> 
 										<div class="col-md-4">
-
 											<!-- PROPERTY PANEL : begin -->
 											<div class="property-panel">
 
 												<!-- SWAP NOW : begin -->
 												<div class="panel-item swap-now">
-													<a  class="button">Reserver</a>
-													<!-- BOOK FORM : begin -->
-											
-												<!-- BOOK FORM : end -->
+													<button style="margin-top: 40px;" onclick="testb()">aaaaa</button>													
 												</div>
 												<!-- SWAP NOW : end -->
-
-												<!-- OBJECT RATING : begin -->
-												<div class="panel-item object-rating">
-													<h4 class="panel-item-title">Object Rating</h4>
-													<div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
-												</div>
-												<!-- OBJECT RATING : end -->
-
-												<!-- OBJECT OWNER : begin -->
-
-												<!-- OBJECT OWNER : end -->
-
-												<!-- DESIRED DESTINATION : begin -->
-												
-												<!-- DESIRED DESTINATION : end -->
-
-												
-												<!-- DESIRED SWAP TIME : end -->
-
-											</div>
-											<!-- PROPERTY PANEL : end -->
+                                             </div>
+                                            <!-- PROPERTY PANEL : end -->
+                                            
 
 										</div>
 									</div>
+
+								
+                                <!-- PROPERTY DETAILS : end -->
 
 								</div>
 								<!-- PROPERTY DETAILS : end -->
@@ -623,6 +604,7 @@
 		<script src="library/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 		<script src="library/twitter/jquery.tweet.min.js" type="text/javascript"></script>
 		<script src="library/js/scripts.js" type="text/javascript"></script>
+		<script src="library/js/reservation.js" type="text/javascript"></script>
 		<!-- SCRIPTS : end -->
 
 	</body>
