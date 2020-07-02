@@ -208,7 +208,7 @@ console.log("localisation"+z.loct);
     t.splice(pos,1)
 t.push(obj);
 localStorage.setItem("addt", JSON.stringify(t));
-listimage = []; 
+listimage = []; 0
     window.location.reload();
 
 
