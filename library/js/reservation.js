@@ -13,7 +13,7 @@ function testb(){
     }
     else{ 
  obj.id =p.id;
-obj.idc=p1.idc;
+obj.idc=p1.id;
 obj.temp=x;
 obj.jour=y;
 t.push(obj);

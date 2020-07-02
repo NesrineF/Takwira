@@ -43,6 +43,8 @@
 		<link rel="stylesheet" type="text/css" href="library/css/skins/default.css">
 		<link rel="stylesheet" type="text/css" href="library/css/switch.css">
 
+		<script src="library/js/logout.js"></script>
+
 		<!--link rel="stylesheet" type="text/css" href="library/css/custom.css"> uncomment if you want to use custom CSS definitions -->
 
 		<!-- STYLESHEETS : end -->
@@ -111,7 +113,7 @@
 
 							
 
-									<select name="villes" id="villes">
+									<select name="villes" id="villes" onchange="searcht()">
 										<option value="" disabled selected>Villes</option>
 										<option value="Ariena">Ariena</option>
 										<option value="Beja">Beja</option>
@@ -295,7 +297,7 @@
 
 							<div class="header-login">
 
-								<button class="login-toggle header-btn"><i class="fa fa-power-off"></i> Logout</button>
+								<button class="login-toggle header-btn" onclick="logout()"><i class="fa fa-power-off"></i> Logout</button>
 
 								
 
@@ -1243,6 +1245,7 @@
 		<script src="library/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 
 		<script src="library/twitter/jquery.tweet.min.js" type="text/javascript"></script>
+		<script src="library/js/search.js"></script>
 
 		<script src="library/js/scripts.js" type="text/javascript"></script>
 
