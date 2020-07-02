@@ -21,7 +21,7 @@ function profil_terrain()
 
     <span class="calendar-input input-left" title="Arrival">
 
-    <select class="time2" id="appt2" style="margin-top: 20px;">
+    <select class="time2" id="appt2" style="margin-top: 20px;" onchange="select()">
         <option value="" disabled selected>le jour</option>
         <option value="1">Lundi</option>
         <option value="2">Mardi</option>
