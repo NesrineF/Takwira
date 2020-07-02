@@ -9,8 +9,7 @@ function profil_terrain()
 
     element2+= `<div class="property-images">
     <div class="image-list">
-        <div class="image"><img src="${p.img[0]}" alt="hhhhhhhhhhhhhhhhhhhhhhhh"></div>
-
+        <div class="image"><img src="${p.img[0]}" alt="hhhhhhhhhhhhhhhhhhhhhhhh"></div> 
     </div>
       </div>
 
@@ -72,8 +71,8 @@ function profil_terrain()
 
         <!-- SWAP NOW : begin -->
         <div class="panel-item swap-now">
-            <button style="margin-top: 40px;" onclick="testb()">aaaaaa</button>													
-        </div>
+			<button class="button" style="margin-top: 40px;" onclick="testb()"> Reserver <i class="fa fa-check"></i></button>													
+			</div>
         <!-- SWAP NOW : end -->
      </div>
     <!-- PROPERTY PANEL : end -->
