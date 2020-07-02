@@ -5,11 +5,6 @@ var parentDiv = document.getElementById("change")
 function affichage(){
     var t1 = JSON.parse(localStorage.getItem("bool")) || [];
     var z=t1.find(bool => bool.tf );
-    
-
-
-
-    
     if (z.tf=="true"){console.log("recherche tekhdem");
     load();
     }
@@ -17,16 +12,19 @@ function affichage(){
     afft();
     }
    localStorage.removeItem("bool");
+   var t1 = JSON.parse(localStorage.getItem("bool")) || [];
+   var obj1 = new Object();
+   obj1.tf="false";
+   t1.push(obj1);
+   localStorage.setItem("bool",JSON.stringify(t1))
+   console.log("obj1.tf"+ obj1.tf);
 
 }
 function load() {
- bool = true;
     //var t1 = JSON.parse(localStorage.getItem("addt")) || [];
     bool= true;
     var t = JSON.parse(localStorage.getItem("recherch"));
     localStorage.removeItem("profil");
-
-
     var list = document.getElementById("resultat")
     var element = ""
     for (let i = 0; i < t.length; i++) {
@@ -50,7 +48,7 @@ function load() {
     }
     list.innerHTML = element;
     localStorage.removeItem("recherch");
-
+    
 }
 
 function openFile(event) {
