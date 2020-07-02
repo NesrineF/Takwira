@@ -8,14 +8,14 @@ function checked() {
     var y = 7;
 
     for (let index = 0; index < z.length; index++) {
-        console.log("aaaaaaaaaaaaaaaa" + z[index].id);
         if (z != undefined) {
-            for (let h = 1; x < z.x; h++) {
-                for (let j = 1; y < z.y; j++) {
+            for (let h = 1; h < x; h++) {//1///8
+                for (let j = 1; j < y; j++) {//1*************7
                     var l = j.toString();
                     var k = h.toString();
                     if ((z[index].temp == k) && (z[index].jour == l)) {
-                        document.getElementById(k + l).checked = true;
+                        document.getElementById(k+l).checked = true;
+                        console.log("aaaaaaaaaaaaaaaa"+ k+l);
                     }
                 }
             }
