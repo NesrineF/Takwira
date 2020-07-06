@@ -18,6 +18,7 @@ obj.temp=x;
 obj.jour=y;
 t.push(obj);
 localStorage.setItem("reserved",JSON.stringify(t));
+alert("Vous avez passez une reservation avec succée")
 
     }
     
