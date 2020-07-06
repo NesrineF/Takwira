@@ -138,6 +138,11 @@ function showImage() {
 <label style="margin-left: -60px">Prix du terrain</label>
 <input type="text" id="prix_terrain" name="field_name" class="required" placeholder="${t[i].prixt}">
 </div>
+<div class="col-sm-6">
+											
+<input type="file" id="img" name="field_img" class="required" onchange="openFile(event)" placeholder="Ajouter une image">
+											
+									</div>
              </div>
             </form>
           </div>
@@ -176,7 +181,8 @@ function Delete(e) {
 
 
 }
-
+var img = "";
+var listimage = []
 function Update(e) {
     console.log(e);
     var t = JSON.parse(localStorage.getItem("addt")) || [];
@@ -194,14 +200,15 @@ obj.swim = z.Swiming;
 obj.cafe = z.Cafe;
 obj.wifi = z.Wifi;
 obj.kids = z.Kids;
-var Image = z.img;
+var Image = z.im;
 obj.img = listimage;
 console.log("localisation"+z.loct);
 
 // console.log("nom du terrain"+document.getElementById("nom_terrain").value);
 // console.log("nombre de personne"+document.getElementById("nombre_personne").value);
 // console.log("numéro du terrain"+document.getElementById("numéro_terrain").value);
-// console.log("prix du terrain"+document.getElementById("prix_terrain").value);
+// alert("prix du terraintttttttttttttttttttttttttttttttttttttttttttttttttttttttt"+obj.img);
+
 
 
     pos = t.map(function (e) { return e.id; }).indexOf(z.id);
