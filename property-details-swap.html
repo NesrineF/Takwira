@@ -31,6 +31,7 @@
         <![endif]-->
 		<script src="library/js/modernizr.custom.min.js" type="text/javascript"></script>
 		<script src="library/js/redirect_terrain.js" type="text/javascript"></script>
+		<script src="library/js/logout.js" type="text/javascript"></script>
 
 	</head>
 	<body class="enable-fixed-header enable-style-switcher enable-inview-animations" onload="profil_terrain()">
@@ -148,42 +149,21 @@
 										<a href="index.html">Home</a>									
 									</li>
 
-									<li class="has-submenu">
+									<li>
 
 										<a href="properties-listing-grid.html">Tous les Terrains</a>
 
-										<ul class="sub-menu">
-
-											<li><a href="properties-listing-grid.html">Grid </a></li>
-
-											<li><a href="properties-listing-list.html">List </a></li>
-											<li><a href="property-details-swap.html">Profil Terrains</a></li>
-
-										</ul>
+										
 
 									</li>
 
 								
-								<li class="has-submenu">
-									
-
-									<a href="profile-owner.html">Profile Proprio</a>
-										<ul class="sub-menu">
-											<li>
-											<a href="Mes-Terrains.html">Mes Terrains</a></li>
-
-									<li><a href="Mes-reservations.html">Mes locations</a></li>
-										</ul>	
-								</li>
+							
 
 
-								<li class="has-submenu">
-								<a href="profile.html">Profile Client</a>
-										<ul class="sub-menu">
+								<li>
+								<a href="profile.html">Profile</a>
 										
-
-									<li><a href="Resrvations-clients.html">Mes reservations</a></li>
-										</ul>	
 								</li>
 
 									
@@ -197,82 +177,20 @@
 						</div>
 
 						<!-- HEADER MENU : end -->
-
+						
 
 						<!-- HEADER TOOLS : begin -->
 						<div class="header-tools">
 
-							<!-- HEADER LANGUAGE : begin -->
-							<div class="header-language">
-								<button class="header-btn">EN <i class="fa fa-angle-down"></i></button>
-								<nav class="header-nav">
-									<ul class="custom-list">
-										<li class="active"><a href="#">EN</a></li>
-										<li><a href="#">DE</a></li>
-										<li><a href="#">FR</a></li>
-										<li><a href="#">IT</a></li>
-									</ul>
-								</nav>
-							</div>
-							<!-- HEADER LANGUAGE : end -->
-
-							<!-- HEADER REGISTER : begin -->
-							<div class="header-register">
-								<button class="register-toggle header-btn"><i class="fa fa-plus-circle"></i> Register</button>
-								<div class="header-form">
-									<form action="http://new.uouapps.com/casa/index.html" class="default-form">
-										<p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> All fields are required! <i class="fa fa-times close"></i></p>
-										<p class="form-row">
-											<input class="required" type="text" placeholder="Username">
-										</p>
-										<p class="form-row">
-											<input class="required email" type="text" placeholder="Email">
-										</p>
-										<p class="form-row">
-											<input class="required" type="password" placeholder="Password">
-										</p>
-										<p class="form-row">
-											<input class="required" type="password" placeholder="Repeat Password">
-										</p>
-										<p class="form-row">
-											<button class="submit-btn button"><i class="fa fa-plus-circle"></i> Register</button>
-										</p>
-									</form>
-								</div>
-							</div>
-							<!-- HEADER REGISTER : end -->
-
-							<!-- HEADER LOGIN : begin -->
 							<div class="header-login">
-								<button class="login-toggle header-btn"><i class="fa fa-power-off"></i> Login</button>
-								<div class="header-form">
-									<form action="http://new.uouapps.com/casa/index.html" class="default-form">
-										<p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> All fields are required! <i class="fa fa-times close"></i></p>
-										<p class="form-row">
-											<input class="required email" type="text" placeholder="Email">
-										</p>
-										<p class="form-row">
-											<input class="required" type="password" placeholder="Password">
-										</p>
-										<p class="form-row">
-											<button class="submit-btn button"><i class="fa fa-power-off"></i> Login</button>
-										</p>
-										<p class="form-row forgot-password">
-											<a href="#">Forgot Password?</a>
-										</p>
-									</form>
-								</div>
+
+								<button class="login-toggle header-btn" onclick="logout()"><i class="fa fa-power-off"></i>
+									Logout</button>
+		
+		
 							</div>
-							<!-- HEADER LOGIN : end -->
-
-							<!-- HEADER ADD OFFER : begin -->
-							<span class="header-add-offer"><a href="#" class="button"><i class="fa fa-plus"></i> Add Offer</a></span>
-							<!-- HEADER ADD OFFER : end -->
-
-						</div>
-						<!-- HEADER TOOLS : end -->
-
-					</div>
+							
+					   </div>
 					<!-- HEADER NAVBAR : end -->
 
 					<!-- SEARCH TOGGLE : begin -->
@@ -298,8 +216,8 @@
 						<h1>Hacienda in Mexico - Swap</h1>
 						<ul class="custom-list breadcrumbs">
 							<li><a href="index.html">Home</a> / </li>
-							<li><a href="properties-listing-grid.html">Search Results</a> /</li>
-							<li><a href="property-details-swap.html">Property Details</a></li>
+							<li><a href="properties-listing-grid.html">Resultas de recherche</a> /</li>
+							<li><a href="property-details-swap.html">Détails de la propriété</a></li>
 						</ul>
 					</div>
 				</div>

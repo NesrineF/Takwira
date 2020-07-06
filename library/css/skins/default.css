@@ -222,8 +222,8 @@ a:hover { border-color: #020E6A; }
 		TABS
 	------------------------------------------------------------------------- */
 
-	.tabs-container .tab-title { color: #FFF; background-color: #D5D9F3; }
-	.tabs-container .tab-title > a { color: #FFF; }
+	.tabs-container .tab-title { color: #020e6a; background-color: #D5D9F3; }
+	.tabs-container .tab-title > a { color: #020E6A; }
 	.tabs-container .tab-title.active { color: #FFF; background-color: #020E6A; }
 	.tabs-container .tab-title.active > a { color: #FFF; }
 	.tabs-container .tab-content-list { background-color: #FFF; border-color: #e6e6e6; border-top-color: #020E6A; }
